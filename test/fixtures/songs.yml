@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  lyric: MyText
+  chart: MyString
+  score: MyString
+  tablature: MyString
+  recording: MyString
+
+two:
+  title: MyString
+  lyric: MyText
+  chart: MyString
+  score: MyString
+  tablature: MyString
+  recording: MyString

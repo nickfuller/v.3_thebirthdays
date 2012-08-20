@@ -11,11 +11,75 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120820195000) do
+ActiveRecord::Schema.define(:version => 20120820215418) do
 
   create_table "albums", :force => true do |t|
     t.string   "title"
     t.date     "releasedate"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "bootlegs", :force => true do |t|
+    t.datetime "uplad_date"
+    t.string   "origin"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "comments", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "fans", :force => true do |t|
+    t.string   "email"
+    t.string   "password"
+    t.string   "avatar"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "images", :force => true do |t|
+    t.datetime "upload_date"
+    t.string   "origin"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "remixes", :force => true do |t|
+    t.datetime "upload_date"
+    t.string   "origin"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "shows", :force => true do |t|
+    t.datetime "date"
+    t.string   "venue"
+    t.string   "string"
+    t.float    "price"
+    t.string   "setlist"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "songs", :force => true do |t|
+    t.string   "title"
+    t.text     "lyric"
+    t.string   "chart"
+    t.string   "score"
+    t.string   "tablature"
+    t.string   "recording"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "videos", :force => true do |t|
+    t.datetime "upload_date"
+    t.string   "origin"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
