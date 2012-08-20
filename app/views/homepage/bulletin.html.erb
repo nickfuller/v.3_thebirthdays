@@ -1,0 +1,15 @@
+<!--
+  This is how we ruby interpret into html attributes (in this case color and size) --> 
+
+<h1><font color="<%=@color%>" size="<%=@size%>">This is the homepage for:</font></h1>
+<a href="logo">
+  <font color="<%=@color%>" size="<%=@size%>">
+  <img src="http://a3.ec-images.myspacecdn.com/images01/71/3e43d90101e098fdd4906b1677581c66/l.jpg"/>
+  </font>
+</a>
+<p>You requested a size <%=@size%>, <%=@color%> header.
+  
+  <!--  
+    "<% @color %>"
+    "<% @size %>" 
+  -->
